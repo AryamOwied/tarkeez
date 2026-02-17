@@ -2,7 +2,8 @@ import { useState } from 'react'
 import Dashboard from './layouts/Dashboard';
 import './App.css'
 import { BrowserRouter,Navigate, Routes,Route} from 'react-router-dom';
-import Login from './Pages/login';
+import Login from './pages/Login';
+
 
 
 function App(){
