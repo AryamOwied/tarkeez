@@ -511,7 +511,7 @@ body.dark .T-btn{
 
   background: linear-gradient(190deg, var(--accent), var(--accent-2), #6f3f1f);
 
-  background-size: 15% ;
+  background-size: 35% ;
 background-repeat: no-repeat;
 background-position: center;
 -webkit-background-clip: text;
@@ -789,7 +789,7 @@ background-position: center;
 
   background: linear-gradient(190deg, var(--accent), var(--accent-2), #6f3f1f);
 
-  background-size: 15% ;
+  background-size: 35% ;
 background-repeat: no-repeat;
 background-position: center;
 -webkit-background-clip: text;
@@ -1217,7 +1217,7 @@ background-position: center;
   font-weight: 900;
   background: linear-gradient(190deg, var(--accent), var(--accent-2), #6f3f1f);
 
-  background-size: 15% ;
+  background-size: 30% ;
 background-repeat: no-repeat;
 background-position: center;
 -webkit-background-clip: text;
