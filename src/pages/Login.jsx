@@ -6,11 +6,19 @@ function Login({setIsLoggedIn}) {
     const [email, setEmail] = useState("");
     const[error,setErorr]=useState("")
     const navigate = useNavigate();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const handleSubmit = (e) => {
   e.preventDefault();
 
-  if (!email.trim() || !password.trim()) {
-    setErorr("كملي البيانات");
+  const cleanEmail = email.trim();
+
+  if (!cleanEmail || !password.trim()) {
+    setErorr("كمل البيانات");
+    return;
+  }
+
+  if (!emailRegex.test(cleanEmail)) {
+    setErorr("صيغة الإيميل غير صحيحة");
     return;
   }
 
@@ -18,9 +26,10 @@ const handleSubmit = (e) => {
 
   localStorage.setItem(
     "currentUser",
-    JSON.stringify({ email })
+    JSON.stringify({ email: cleanEmail })
   );
 
+  setErorr("");
   navigate("/dashboard");
 };
 
